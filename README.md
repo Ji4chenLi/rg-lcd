@@ -14,8 +14,9 @@ pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 diffusers transfo
 ## ✅ Local gradio Demos (Text-to-Image):
 Launch the gradio: (For MacOS users, need to set the device="mps" in app.py; For Intel GPU users, set device="xpu" in app.py)
 ```
-python local_gradio/app.py
+python local_gradio/app.py --model_name MODEL_NAME
 ```
+You can find the currently available models at [here](https://huggingface.co/jiachenli-ucsb) with the prefix `RG-LCM`. By default, `MODEL_NAME` is set to `jiachenli-ucsb/RG-LCM-SD-2.1-768-HPSv2.1`, which is ditilled from [Stable Diffusion 2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1) with the reward feedback from [HPSv2.1](https://github.com/tgxs002/HPSv2/tree/master).
 
 
 ## 🏋️ Training commands
