@@ -1,13 +1,22 @@
 # Reward Guided Latent Consistency Distillation
 
 ## 🔥News
-- (🔥New) 03/18/2024 Our repo for RG-LCD is created. We will release our codes and models very soon!! Please stay tuned!
+- (🔥New) 05/28/2024 We release the model weights and the local gradio demo! The model weights can be download from [here](https://huggingface.co/jiachenli-ucsb/RG-LCM-SD-2.1-768-HPSv2.1). We will release other model weights soon!
+
+- 03/18/2024 Our repo for RG-LCD is created. We will release our codes and models very soon!! Please stay tuned!
 
 ## 🏭 Installation
 
 ```
-pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 diffusers transformers accelerate gradio webdataset accelerate open_clip_torch
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 diffusers transformers accelerate gradio webdataset accelerate open_clip_torch gradio==3.48.0 
 ```
+
+## ✅ Local gradio Demos (Text-to-Image):
+Launch the gradio: (For MacOS users, need to set the device="mps" in app.py; For Intel GPU users, set device="xpu" in app.py)
+```
+python local_gradio/app.py
+```
+
 
 ## 🏋️ Training commands
 
