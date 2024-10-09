@@ -1,0 +1,17 @@
+{
+    "embed_dim": 1024,
+    "vision_cfg": {
+        "in_chans": 4,
+        "image_size": 64,
+        "layers": 12,
+        "width": 512,
+        "patch_size": 4
+    },
+    "text_cfg": {
+        "context_length": 77,
+        "vocab_size": 49408,
+        "width": 1024,
+        "heads": 16,
+        "layers": 24
+    }
+}
